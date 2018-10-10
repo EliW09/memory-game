@@ -20,6 +20,9 @@ var cards = [{
 	suit: "diamonds",
 	cardImage: "images/king-of-diamonds.png"
 }]
+
+cards.sort(() => Math.random() - 0.5);
+
 var cardsInPlay = [];
 
 function checkForMatch() {
