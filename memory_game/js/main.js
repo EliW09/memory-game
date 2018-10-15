@@ -26,10 +26,11 @@ cards.sort(() => Math.random() - 0.5);
 var cardsInPlay = [];
 
 function checkForMatch() {
+	const checkMatch = document.querySelector('#results');
 	if (cardsInPlay[0] === cardsInPlay[1]) {
-		alert("You found a match!");
+		checkMatch.textContent = 'WON';
 	} else {
-		alert("Sorry, try again.");
+		checkMatch.textContent = 'LOST';
 	}
 }
 
